@@ -56,10 +56,6 @@ class LoginViewController: UIViewController {
     
     @IBAction func didTapLoginButton(_ sender: Any) {
         TwitterClient.shared.logIn(username: self.usernameTextField.text!, password: self.passwordTextField.text!)
-        if TwitterClient.shared.isLoggedIn.value == true {
-            self.dismiss(animated: true, completion: nil)
-        }
     }
     
-
 }
