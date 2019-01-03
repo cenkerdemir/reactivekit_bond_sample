@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="EAj-m1-g07">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="81r-te-HGX" customClass="LoginViewController" customModule="Code_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gNj-ex-wg6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Av7-XT-gAe">
+                                <rect key="frame" x="61" y="178" width="253" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32f-Cv-Vwx">
+                                <rect key="frame" x="61" y="254" width="253" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IW1-RW-xC3">
+                                <rect key="frame" x="156.5" y="355" width="62" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="81r-te-HGX" eventType="touchUpInside" id="J25-Vl-7Op"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18247714850015673" green="0.75888978986823385" blue="0.96993559598922729" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="32f-Cv-Vwx" firstAttribute="centerX" secondItem="IW1-RW-xC3" secondAttribute="centerX" id="3q8-Hv-pXc"/>
+                            <constraint firstItem="Av7-XT-gAe" firstAttribute="leading" secondItem="hSf-WZ-KK8" secondAttribute="leading" constant="61" id="El6-bt-kTJ"/>
+                            <constraint firstItem="Av7-XT-gAe" firstAttribute="centerX" secondItem="gNj-ex-wg6" secondAttribute="centerX" id="Kag-wM-7rV"/>
+                            <constraint firstItem="Av7-XT-gAe" firstAttribute="leading" secondItem="32f-Cv-Vwx" secondAttribute="leading" id="S1H-ga-d5D"/>
+                            <constraint firstItem="IW1-RW-xC3" firstAttribute="top" secondItem="32f-Cv-Vwx" secondAttribute="bottom" constant="71" id="T6V-Ki-8aZ"/>
+                            <constraint firstItem="Av7-XT-gAe" firstAttribute="trailing" secondItem="32f-Cv-Vwx" secondAttribute="trailing" id="XK4-Wn-vSW"/>
+                            <constraint firstItem="32f-Cv-Vwx" firstAttribute="top" secondItem="Av7-XT-gAe" secondAttribute="bottom" constant="46" id="nl4-GW-iWr"/>
+                            <constraint firstItem="Av7-XT-gAe" firstAttribute="top" secondItem="hSf-WZ-KK8" secondAttribute="top" constant="158" id="vP8-TL-hWE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hSf-WZ-KK8"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="IW1-RW-xC3" id="KKw-ye-aAH"/>
+                        <outlet property="passwordTextField" destination="32f-Cv-Vwx" id="1Fv-oe-OyU"/>
+                        <outlet property="usernameTextField" destination="Av7-XT-gAe" id="FEc-gb-Bt6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccp-oI-b2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-570.39999999999998" y="-230.73463268365819"/>
+        </scene>
+    </scenes>
+</document>
